@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>google</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard-Copy-7" transform="translate(-62.000000, -1414.000000)">
+            <g id="google" transform="translate(62.000000, 1414.000000)">
+                <rect id="Rectangle" fill="none" x="0" y="0" width="80" height="80"></rect>
+                <path d="M40,36 L40,46 L54.145,46 C52.08,51.82 46.52,56 40,56 C31.73,56 25,49.27 25,41 C25,32.73 31.73,26 40,26 C43.585,26 47.035,27.285 49.715,29.62 L56.285,22.08 C51.785,18.16 46.005,16 40,16 C26.215,16 15,27.215 15,41 C15,54.785 26.215,66 40,66 C53.785,66 65,54.785 65,41 L65,36 L40,36 Z" fill="#000000"></path>
+            </g>
+        </g>
+    </g>
+</svg>

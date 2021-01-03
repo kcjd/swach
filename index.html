@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Swach, a complete color tool for all designers</title>
+  <meta name="title" content="Swach, a complete color tool for all designers">
+  <meta name="description" content="Swach allows you to pick colors, arrange them into palettes, and get color suggestions. Swach supports MacOS, Windows, and Linux.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kcjd.github.io/swach/">
+  <meta property="og:title" content="Swach, a complete color tool for all designers">
+  <meta property="og:description" content="Swach allows you to pick colors, arrange them into palettes, and get color suggestions. Swach supports MacOS, Windows, and Linux.">
+  <meta property="og:image" content="https://kcjd.github.io/swach/resources/images/utils/og.jpg">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://kcjd.github.io/swach/">
+  <meta property="twitter:title" content="Swach, a complete color tool for all designers">
+  <meta property="twitter:description" content="Swach allows you to pick colors, arrange them into palettes, and get color suggestions. Swach supports MacOS, Windows, and Linux.">
+  <meta property="twitter:image" content="https://kcjd.github.io/swach/resources/images/utils/og.jpg">
+
+  <link rel="icon" href="resources/images/utils/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
+  <link rel="stylesheet" href="vendors/aos/aos.css">
+
+  <link rel="stylesheet" href="resources/css/main.css">
+
+  <script src="https://kit.fontawesome.com/27e2f7d0bd.js" crossorigin="anonymous"></script>
+  <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script src="vendors/aos/aos.js"></script>
+
+  <script src="resources/js/aos.js" defer></script>
+  <script src="resources/js/toast.js" defer></script>
+  <script src="resources/js/scrollspy.js" defer></script>
+  <script src="resources/js/download.js" defer></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-light navbar-expand-lg fixed-top shadow-sm bg-white fw-bold py-2">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <img alt="Swach" src="./resources/images/template/logo.svg" width="40" height="40">
+        <span class="ms-2">Swach</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="main-nav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#download">Download</a></li>
+          <li class="nav-item"><a class="nav-link" href="#docs">Docs</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="container-fluid pt-6" id="home">
+    <div class="container text-center py-7" data-aos="zoom-out">
+      <h1>A complete color tool <br> for all designers</h1>
+
+      <button type="button" class="btn btn-outline-primary mt-4" data-bs-toggle="modal" data-bs-target="#download-modal">Free download</a>
+    </div>
+  </header>
+
+  <section class="container-fluid bg-light skew-top-neg skew-bottom pb-7">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+          <div class="position-relative" data-aos="zoom-in">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./resources/images/hero/illustration-md.jpg">
+    
+              <img alt="Tiki Shaman by Roman Klčo" src="./resources/images/hero/illustration-sm.jpg" class="w-95 rounded shadow-sm">
+            </picture>
+    
+            <img alt="Swach screen" src="./resources/images/hero/screen.jpg" class="position-absolute bottom-0 end-0 w-35 hero-screen rounded border shadow-sm">
+    
+            <div class="mt-2">
+              <small class="text-muted">Illustration by <a href="https://dribbble.com/romanklco" target="_blank">Roman Klčo</a></small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-7">
+        <div class="row g-4">
+          <div class="col-12 text-center">
+            <h3>Companies using Swach</h3>
+          </div>
+
+          <div class="col-4 col-lg-2">
+            <img alt="Google" src="./resources/images/partners/google.svg" class="img-fluid">
+          </div>
+
+          <div class="col-4 col-lg-2">
+            <img alt="Netflix" src="./resources/images/partners/netflix.svg" class="img-fluid">
+          </div>
+
+          <div class="col-4 col-lg-2">
+            <img alt="Dropbox" src="./resources/images/partners/dropbox.svg" class="img-fluid">
+          </div>
+
+          <div class="col-4 col-lg-2">
+            <img alt="Twitter" src="./resources/images/partners/twitter.svg" class="img-fluid">
+          </div>
+
+          <div class="col-4 col-lg-2">
+            <img alt="Apple" src="./resources/images/partners/apple.svg" class="img-fluid">
+           </div>
+
+          <div class="col-4 col-lg-2">
+            <img alt="Pinterest" src="./resources/images/partners/pinterest.svg" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid py-7" id="features">
+    <div class="container py-6">
+      <div class="row g-5 align-items-center justify-content-center justify-content-lg-between">
+        <div class="col-8 col-md-6 col-lg-4" data-aos="fade-up">
+          <img alt="Color picker screen" src="./resources/images/features/picker.jpg" class="img-fluid">
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <h2>
+            <span class="h4 text-accent d-block mb-3">Color picker</span>
+            Collect and edit colors
+          </h2>
+
+          <p>Our color picker runs natively across MacOS, Windows, and Linux, allowing you to have the same seamless workflow, regardless of what machine you might be on.</p>
+
+          <p>Colors are automatically copied to the clipboard, so they can be easily pasted wherever they are needed.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-6">
+      <div class="row g-5 align-items-center justify-content-center justify-content-lg-between">
+        <div class="col-8 col-md-6 col-lg-4" data-aos="fade-up">
+          <img alt="Palettes screen" src="./resources/images/features/palettes.jpg" class="img-fluid border rounded shadow">
+        </div>
+
+        <div class="col-12 col-lg-6 order-lg-first">
+          <h2>
+            <span class="h4 text-accent d-block mb-3">Palettes</span>
+            Create the perfect palette
+          </h2>
+
+          <p>Palettes are the main color organization method in Swach. You might use them for separate projects, brands, inspiration, etc.</p>
+
+          <p>They can store as few or as many colors as you would like. Colors can be moved from your color history into any palette, and between any unlocked palettes as well.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-6">
+      <div class="row g-5 align-items-center justify-content-center justify-content-lg-between">
+        <div class="col-8 col-md-6 col-lg-4" data-aos="fade-up">
+          <img alt="Color harmonies screen" src="./resources/images/features/harmonies.jpg" class="img-fluid border rounded shadow">
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <h2>
+            <span class="h4 text-accent d-block mb-3">Color harmonies</span>
+            Match the right colors
+          </h2>
+
+          <p>Sometimes you may have one base color you particularly love, but you are not sure what other colors might go with it. To remedy this problem we added the color harmonies palette generator.</p>
+
+          <p>This feature can be accessed by hovering the menu options of a single color and clicking the slider. It supports generating complementary, monochromatic, triad, and more!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-6">
+      <div class="row g-5 align-items-center justify-content-center justify-content-lg-between">
+        <div class="col-8 col-md-6 col-lg-4" data-aos="fade-up">
+          <img alt="Contrast checker screen" src="./resources/images/features/contrast.jpg" class="img-fluid border rounded shadow">
+        </div>
+
+        <div class="col-12 col-lg-6 order-lg-first">
+          <h2>
+            <span class="h4 text-accent d-block mb-3">Contrast checker</span>
+            Avoid low-contrast
+          </h2>
+
+          <p>Ensure your color combinations are accessible and adhere to the WCAG standard.</p>
+
+          <p>Colors with insufficient contrast can hurt accessibility and can be frustrating for users of your product. Use this tool to avoid those issues.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid bg-secondary text-white skew-top skew-bottom py-7">
+    <div class="container">
+      <div class="row g-5 align-items-center" data-aos="zoom-out">
+        <div class="col-12 col-lg-3">
+          <img alt="Luis Cancel" src="./resources/images/testimony/avatar.jpg" class="me-3 rounded-circle" width="160px">
+        </div>
+
+        <div class="col-12 col-lg-9">
+          <figure>
+            <blockquote class="blockquote">
+              <i class="fas fa-quote-left mb-3"></i>
+              <p class="fw-bold">I love the simplicity of the design and the experience of the app itself. Swach is a helpful and nice tool to have around.</p>
+            </blockquote>
+
+            <figcaption class="blockquote-footer">
+              <span class="fw-bold text-uppercase">Luis Cancel</span>, Art Director
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid py-8" id="download">
+    <div class="container">
+      <div class="row g-5 justify-content-center align-items-center">
+        <div class="col-12 col-md-10 col-lg-7 text-center" data-aos="zoom-out">
+          <h2 class="mb-2">Try Swach today</h2>
+
+          <span class="d-block lead">Available for macOS, Windows, and Linux</span>
+
+          <button type="button" class="btn btn-outline-primary mt-5" data-bs-toggle="modal" data-bs-target="#download-modal">Free download</button>
+        </div>
+
+        <div class="col-12 col-md-10 col-lg-5 order-lg-first" data-aos="zoom-in">
+          <div class="position-relative">
+            <img alt="Bose Soundlink Revolve+ by Peter Tarka" src="./resources/images/download/download.png" class="w-95 rounded shadow-sm">
+
+            <img alt="Swach screen" src="./resources/images/download/screen.jpg" class="position-absolute bottom-0 end-0 w-35 rounded border shadow-sm">
+  
+            <div class="mt-2">
+              <small class="text-muted">Illustration by <a href="https://dribbble.com/tarka" target="_blank">Peter Tarka</a></small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid bg-light skew-top skew-bottom py-7">
+    <div class="container">
+      <div class="text-center">
+        <h3>Why Swach ?</h3>
+
+        <span class="d-block lead">We built Swach to be a complete color tool for all designers on all platforms.</span>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 bg-white rounded shadow-sm mt-6 p-4" data-aos="fade-up">
+          <div class="table-responsive">
+            <table class="table table-borderless mb-0">
+              <thead>
+                <tr class="d-flex">
+                  <th scope="col" class="col"></th>
+                  <th scope="col" class="col text-center">Swach</th>
+                  <th scope="col" class="col text-center">Sip</th>
+                  <th scope="col" class="col text-center">Contrast</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr class="d-flex">
+                  <th scope="row" class="col">Color palettes</th>
+                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
+                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
+                  <td class="col"></td>
+                </tr>
+
+                <tr class="d-flex">
+                  <th scope="row" class="col">Contrast checker</th>
+                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
+                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
+                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
+                </tr>
+
+                <tr class="d-flex">
+                  <th scope="row" class="col">Color harmonies</th>
+                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
+                  <td class="col"></td>
+                  <td class="col"></td>
+                </tr>
+
+                <tr class="d-flex">
+                  <th scope="row" class="col">macOS support</th>
+                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
+                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
+                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
+                </tr>
+
+                <tr class="d-flex">
+                  <th scope="row" class="col-3">Windows support</th>
+                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
+                  <td class="col"></td>
+                  <td class="col"></td>
+                </tr>
+
+                <tr class="d-flex">
+                  <th scope="row" class="col">Linux support</th>
+                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
+                  <td class="col"></td>
+                  <td class="col"></td>
+                </tr>
+
+                <tr class="d-flex">
+                  <th scope="row" class="col">Price</th>
+                  <td class="col text-center">Free</td>
+                  <td class="col text-center">$10</td>
+                  <td class="col text-center">$6.99</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid py-7" id="docs">
+    <div class="container">
+      <div class="row justify-content-between align-items-baseline">
+        <div class="col-12 col-lg-2">
+          <h2>Docs</h2>
+
+          <ol class="list-unstyled fw-bold">
+            <li><a href="#getting-started"><i class="fas fa-caret-right me-2"></i> Getting Started</a></li>
+            <li><a href="#color-picker"><i class="fas fa-caret-right me-2"></i> Color picker</a></li>
+            <li><a href="#contrast-checker"><i class="fas fa-caret-right me-2"></i> Contrast checker</a></li>
+            <li><a href="#shortcuts"><i class="fas fa-caret-right me-2"></i> Shortcuts</a></li>
+          </ol>
+        </div>
+
+        <div class="col-12 col-lg-8">
+          <div class="py-6 border-bottom" id="getting-started">
+            <h3>Getting Started</h3>
+
+            <p class="lead mb-5">Swach is 100% free, no strings attached. If you enjoy using it, we would appreciate any donations to its continued development! You can sponsor us on GitHub.</p>
+
+            <h4>Supported Platforms</h4>
+
+            <ol class="list-unstyled">
+              <li><i class="fas fa-long-arrow-alt-right me-3"></i> Windows 8 or newer</li>
+              <li><i class="fas fa-long-arrow-alt-right me-3"></i> macOS 10.13 or newer</li>              
+              <li><i class="fas fa-long-arrow-alt-right me-3"></i> Ubuntu 18.04 or newer</li>
+              <li><i class="fas fa-long-arrow-alt-right me-3"></i> Other various linux distros (coming soon)</li>
+            </ol>
+          </div>
+
+          <div class="py-6 border-bottom" id="color-picker">
+            <h3>Color picker</h3>
+
+            <p class="mb-5">The color picker is the tool you use to pick colors. When you pick a color, it adds the color to the Color History and also to your clipboard, so you can quickly paste anywhere you want.</p>
+
+            <h4>How to access</h4>
+
+            <ol class="list-unstyled">
+              <li><i class="fas fa-long-arrow-alt-right me-3"></i> Select the icon on the Menu Toolbar</li>
+              <li><i class="fas fa-long-arrow-alt-right me-3"></i> Use the <kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>P</kbd> shortcut</li>
+            </ol>
+          </div>
+
+          <div class="py-6 border-bottom" id="contrast-checker">
+            <h3>Contrast checker</h3>
+
+            <p class="mb-5">The contrast checker helps you ensure your color combinations are always accessible and adhere to the WCAG 2.0 standards.</p>
+
+            <h4>How to access</h4>
+
+            <ol class="list-unstyled">
+              <li><i class="fas fa-long-arrow-alt-right me-3"></i> Select the icon on the Menu Toolbar</li>
+              <li><i class="fas fa-long-arrow-alt-right me-3"></i> Use the <kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>C</kbd> shortcut</li>
+            </ol>
+          </div>
+
+          <div class="pt-6" id="shortcuts">
+            <h3>Shortcuts</h3>
+
+            <h4>macOS</h4>
+
+            <ol class="list-unstyled mb-5">
+              <li><i class="fas fa-long-arrow-alt-right me-3"></i> Open Picker : <kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>P</kbd></li>
+              <li><i class="fas fa-long-arrow-alt-right me-3"></i> Open Contrast Checker : <kbd>⌃</kbd> <kbd>⌥</kbd> <kbd>⌘</kbd> <kbd>C</kbd></li>
+              <li><i class="fas fa-long-arrow-alt-right me-3"></i> Undo Action : <kbd>⌘</kbd> <kbd>Z</kbd></li>
+              <li><i class="fas fa-long-arrow-alt-right me-3"></i> Redo Action : <kbd>⇧</kbd> <kbd>⌘</kbd> <kbd>Z</kbd></li>
+            </ol>
+
+            <h4>Windows</h4>
+
+            <ol class="list-unstyled">
+              <li><i class="fas fa-long-arrow-alt-right me-3"></i> Open Picker : <kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>Win</kbd> <kbd>P</kbd></li>
+              <li><i class="fas fa-long-arrow-alt-right me-3"></i> Open Contrast Checker : <kbd>Ctrl</kbd> <kbd>Alt</kbd> <kbd>Win</kbd> <kbd>C</kbd></li>
+              <li><i class="fas fa-long-arrow-alt-right me-3"></i> Undo Action : <kbd>Ctrl</kbd> <kbd>Z</kbd></li>
+              <li><i class="fas fa-long-arrow-alt-right me-3"></i> Redo Action : <kbd>⇧</kbd> <kbd>Ctrl</kbd> <kbd>Z</kbd></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container-fluid bg-secondary skew-top pt-7" id="contact">
+    <div class="container">
+      <h3 class="text-white">Get in touch</h3>
+
+      <div class="row justify-content-between mt-5">
+        <div class="col-12 col-lg-3 mb-5 mb-lg-0 text-white">
+          <p class="mb-4">We hope the app is intuitive to use, and does not have bugs, but if you have issues or questions, please email us.</p>
+
+          <ul class="list-unstyled list-inline h4">
+            <li class="list-inline-item"><a href="https://github.com/shipshapecode" target="_blank" class="text-white"><i title="Github" class="fab fa-github-alt"></i></a></li>
+            <li class="list-inline-item"><a href="https://twitter.com/shipshapecode" target="_blank" class="text-white"><i title="Twitter" class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.linkedin.com/company/ship-shape/" target="_blank" class="text-white"><i title="Linked In" class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="col-12 col-lg-8">
+          <form>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="contact-name" placeholder="Name">
+              <label for="contact-name">Name</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="contact-email" placeholder="Email">
+              <label for="contact-email">Email</label>
+            </div>
+
+            <div class="form-floating mb-3">
+              <textarea class="form-control" rows="5" id="contact-message" placeholder="Message" style="height:140px"></textarea>
+              <label for="contact-message">Message</label>
+            </div>
+
+            <button type="submit" class="btn btn-outline-light btn-sm" disabled>Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-flex flex-column text-white text-center pt-6 pb-4">
+      <small>Designed and developped by Kévin Colonjard.</small>
+      <small>Images and content belong to <a href="https://shipshape.io/" target="_blank">Ship Shape</a>.</small>
+    </div>
+  </footer>
+
+  <div class="toast" id="support-toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+    <div class="toast-body">
+      <span>Don't forget to rate Swach on Product Hunt !</span>
+
+      <div class="row mt-3">
+        <div class="col-6">
+          <a class="btn btn-secondary btn-sm w-100" href="https://www.producthunt.com/posts/swach" target="_blank">Let's go</a>
+        </div>
+        <div class="col-6">
+          <button type="button" class="btn btn-link btn-sm w-100" data-bs-dismiss="toast">Dismiss</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="download-modal" tabindex="-1" role="dialog" aria-labelledby="download-modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h5 class="mb-0">Download Swach</h5>
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+
+          <form>
+            <div class="form-floating">
+              <select class="form-select" id="download-select">
+                <option value="windows" selected>Windows</option>
+                <option value="macos">MacOS</option>
+                <option value="ubuntu">Ubuntu</option>
+              </select>
+
+              <label for="download-select">Please select your OS</label>
+            </div>
+
+            <small class="d-block text-muted mt-3" id="download-note"></small>
+
+            <div class="row g-2 mt-4">
+              <div class="col-6">
+                <a class="btn btn-secondary btn-sm w-100" id="download-button">Download</a>
+              </div>
+              <div class="col-6">
+                <button type="button" class="btn btn-link btn-sm w-100" data-bs-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
