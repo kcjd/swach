@@ -3,7 +3,11 @@ Landing page for Swach, a color management app available on Windows, macOS and L
 
 ## Features
 * Mobile-first responsive design
+* One page navigation
 * On-scroll reveal animations
+* JavaScript interactions (modal, toast)
+* Responsive images
+* Open Graph tags
 
 ## Built With
 * [Bootstrap 5](https://getbootstrap.com/)

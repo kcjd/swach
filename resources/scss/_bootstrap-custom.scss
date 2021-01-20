@@ -2,15 +2,17 @@
 @import "../../vendors/bootstrap/scss/variables";
 
 $primary: #ff0041;
-$secondary: #161642;
-$accent: #417bea;
-$light: #d6ecfd;
+$secondary: #00abcc;
+$accent: #fff9f8;
+$light:#e9f5fe;
+$dark: #161642;
 
 $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
   "accent": $accent,
   "light": $light,
+  "dark": $dark,
 );
 
 $spacers: (
@@ -25,7 +27,7 @@ $spacers: (
   8: ($spacer * 12),
 );
 
-$link-color: $primary;
+$link-color: $secondary;
 $link-hover-color: darken($link-color, 15%);
 $link-decoration: none;
 
@@ -52,7 +54,7 @@ $blockquote-footer-font-size: $font-size-base;
 
 $list-inline-padding: 1rem;
 
-$component-active-bg: $accent;
+$component-active-bg: $primary;
 $input-btn-focus-color: rgba($component-active-bg, $input-btn-focus-color-opacity);
 $input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color;
 $input-focus-border-color: tint-color($component-active-bg, 50%);
@@ -62,6 +64,8 @@ $input-padding-x: 1rem;
 $input-height: auto;
 $form-select-focus-border-color: $input-focus-border-color;
 $form-select-focus-box-shadow: 0 0 0 $form-select-focus-width $input-btn-focus-color;
+
+$border-color: $gray-200;
 
 $btn-padding-y: .8rem;
 $btn-padding-x: 2.4rem;
@@ -89,11 +93,25 @@ $modal-content-border-width: 0;
 $modal-content-border-radius: $border-radius;
 $modal-inner-padding: 1.4rem;
 
+$table-cell-padding-y: 1rem;
+$table-cell-padding-x: 2.4rem;
+$table-th-font-weight: $font-weight-bold;
+$table-border-color: $border-color;
+$table-group-separator-color: $border-color;
+
 @import "../../vendors/bootstrap/scss/bootstrap";
 
 .navbar {
   &-toggler {
     border: none;
+  }
+
+  &-brand {
+    padding: 0 .75rem;
+  }
+
+  &-nav {
+    padding: 0 .75rem;
   }
 }
 
@@ -113,7 +131,7 @@ $modal-inner-padding: 1.4rem;
 
 .table-responsive {
   .table {
-    min-width: 460px;
+    min-width: 640px;
   }
 }
 

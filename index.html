@@ -14,28 +14,23 @@
   <meta property="og:title" content="Swach, a complete color tool for all designers">
   <meta property="og:description" content="Swach allows you to pick colors, arrange them into palettes, and get color suggestions. Swach supports MacOS, Windows, and Linux.">
   <meta property="og:image" content="https://kcjd.github.io/swach/resources/images/utils/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://kcjd.github.io/swach/">
-  <meta property="twitter:title" content="Swach, a complete color tool for all designers">
-  <meta property="twitter:description" content="Swach allows you to pick colors, arrange them into palettes, and get color suggestions. Swach supports MacOS, Windows, and Linux.">
-  <meta property="twitter:image" content="https://kcjd.github.io/swach/resources/images/utils/og.jpg">
-
-  <link rel="icon" href="resources/images/utils/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/svg+xml" href="./resources/images/utils/favicon.svg">
+  <link rel="icon" type="image/png" href="./resources/images/utils/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" type="image/png" href="./resources/images/utils/apple-touch-icon.png" sizes="180x180">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap">
-  <link rel="stylesheet" href="vendors/aos/aos.css">
-
-  <link rel="stylesheet" href="resources/css/main.css">
+  <link rel="stylesheet" href="./vendors/aos/aos.css">
+  <link rel="stylesheet" href="./resources/css/main.css">
 
   <script src="https://kit.fontawesome.com/27e2f7d0bd.js" crossorigin="anonymous"></script>
-  <script src="vendors/bootstrap/js/bootstrap.min.js"></script>
-  <script src="vendors/aos/aos.js"></script>
-
-  <script src="resources/js/aos.js" defer></script>
-  <script src="resources/js/toast.js" defer></script>
-  <script src="resources/js/scrollspy.js" defer></script>
-  <script src="resources/js/download.js" defer></script>
+  <script src="./vendors/bootstrap/js/bootstrap.min.js"></script>
+  <script src="./vendors/aos/aos.js"></script>
+  <script src="./resources/js/aos-init.js" defer></script>
+  <script src="./resources/js/toast.js" defer></script>
+  <script src="./resources/js/scrollspy.js" defer></script>
+  <script src="./resources/js/download.js" defer></script>
 </head>
 
 <body>
@@ -43,7 +38,7 @@
     <div class="container">
       <a class="navbar-brand" href="#home">
         <img alt="Swach" src="./resources/images/template/logo.svg" width="40" height="40">
-        <span class="ms-2">Swach</span>
+        <span class="d-none d-md-inline ms-2">Swach</span>
       </a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav">
@@ -55,6 +50,7 @@
           <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
           <li class="nav-item"><a class="nav-link" href="#download">Download</a></li>
+          <li class="nav-item"><a class="nav-link" href="#compare">Compare</a></li>
           <li class="nav-item"><a class="nav-link" href="#docs">Docs</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
@@ -62,7 +58,7 @@
     </div>
   </nav>
 
-  <header class="container-fluid pt-6" id="home">
+  <header class="pt-6" id="home">
     <div class="container text-center py-7" data-aos="zoom-out">
       <h1>A complete color tool <br> for all designers</h1>
 
@@ -70,18 +66,22 @@
     </div>
   </header>
 
-  <section class="container-fluid bg-light skew-top-neg skew-bottom pb-7">
+  <section class="bg-light skew-top-neg skew-bottom pb-7">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-12 col-md-10">
           <div class="position-relative" data-aos="zoom-in">
             <picture>
+              <source media="(min-width: 1200px)" srcset="./resources/images/hero/illustration-lg.jpg">
               <source media="(min-width: 768px)" srcset="./resources/images/hero/illustration-md.jpg">
-    
               <img alt="Tiki Shaman by Roman Klčo" src="./resources/images/hero/illustration-sm.jpg" class="w-95 rounded shadow-sm">
             </picture>
-    
-            <img alt="Swach screen" src="./resources/images/hero/screen.jpg" class="position-absolute bottom-0 end-0 w-35 hero-screen rounded border shadow-sm">
+
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./resources/images/hero/screen-lg.jpg">
+              <source media="(min-width: 768px)" srcset="./resources/images/hero/screen-md.jpg">
+              <img alt="Swach screen" src="./resources/images/hero/screen-sm.jpg" class="position-absolute bottom-0 end-0 w-35 rounded border shadow-sm">
+            </picture>
     
             <div class="mt-2">
               <small class="text-muted">Illustration by <a href="https://dribbble.com/romanklco" target="_blank">Roman Klčo</a></small>
@@ -97,43 +97,46 @@
           </div>
 
           <div class="col-4 col-lg-2">
-            <img alt="Google" src="./resources/images/partners/google.svg" class="img-fluid">
+            <img alt="Google" src="./resources/images/partners/google.svg" class="img-fluid" width="60" height="60">
           </div>
 
           <div class="col-4 col-lg-2">
-            <img alt="Netflix" src="./resources/images/partners/netflix.svg" class="img-fluid">
+            <img alt="Netflix" src="./resources/images/partners/netflix.svg" class="img-fluid" width="60" height="60">
           </div>
 
           <div class="col-4 col-lg-2">
-            <img alt="Dropbox" src="./resources/images/partners/dropbox.svg" class="img-fluid">
+            <img alt="Dropbox" src="./resources/images/partners/dropbox.svg" class="img-fluid" width="60" height="60">
           </div>
 
           <div class="col-4 col-lg-2">
-            <img alt="Twitter" src="./resources/images/partners/twitter.svg" class="img-fluid">
+            <img alt="Twitter" src="./resources/images/partners/twitter.svg" class="img-fluid" width="60" height="60">
           </div>
 
           <div class="col-4 col-lg-2">
-            <img alt="Apple" src="./resources/images/partners/apple.svg" class="img-fluid">
+            <img alt="Apple" src="./resources/images/partners/apple.svg" class="img-fluid" width="60" height="60">
            </div>
 
           <div class="col-4 col-lg-2">
-            <img alt="Pinterest" src="./resources/images/partners/pinterest.svg" class="img-fluid">
+            <img alt="Pinterest" src="./resources/images/partners/pinterest.svg" class="img-fluid" width="60" height="60">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="container-fluid py-7" id="features">
+  <section class="py-7" id="features">
     <div class="container py-6">
       <div class="row g-5 align-items-center justify-content-center justify-content-lg-between">
         <div class="col-8 col-md-6 col-lg-4" data-aos="fade-up">
-          <img alt="Color picker screen" src="./resources/images/features/picker.jpg" class="img-fluid">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./resources/images/features/picker-md.jpg">
+            <img alt="Color picker screen" src="./resources/images/features/picker-sm.jpg" class="img-fluid">
+          </picture>
         </div>
 
         <div class="col-12 col-lg-6">
           <h2>
-            <span class="h4 text-accent d-block mb-3">Color picker</span>
+            <span class="h4 text-secondary d-block mb-2">Color picker</span>
             Collect and edit colors
           </h2>
 
@@ -147,12 +150,15 @@
     <div class="container py-6">
       <div class="row g-5 align-items-center justify-content-center justify-content-lg-between">
         <div class="col-8 col-md-6 col-lg-4" data-aos="fade-up">
-          <img alt="Palettes screen" src="./resources/images/features/palettes.jpg" class="img-fluid border rounded shadow">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./resources/images/features/palettes-md.jpg">
+            <img alt="Palettes screen" src="./resources/images/features/palettes-sm.jpg" class="img-fluid border rounded shadow">
+          </picture>
         </div>
 
         <div class="col-12 col-lg-6 order-lg-first">
           <h2>
-            <span class="h4 text-accent d-block mb-3">Palettes</span>
+            <span class="h4 text-secondary d-block mb-2">Palettes</span>
             Create the perfect palette
           </h2>
 
@@ -166,12 +172,15 @@
     <div class="container py-6">
       <div class="row g-5 align-items-center justify-content-center justify-content-lg-between">
         <div class="col-8 col-md-6 col-lg-4" data-aos="fade-up">
-          <img alt="Color harmonies screen" src="./resources/images/features/harmonies.jpg" class="img-fluid border rounded shadow">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./resources/images/features/harmonies-md.jpg">
+            <img alt="Color harmonies screen" src="./resources/images/features/harmonies-sm.jpg" class="img-fluid border rounded shadow">
+          </picture>
         </div>
 
         <div class="col-12 col-lg-6">
           <h2>
-            <span class="h4 text-accent d-block mb-3">Color harmonies</span>
+            <span class="h4 text-secondary d-block mb-2">Color harmonies</span>
             Match the right colors
           </h2>
 
@@ -185,12 +194,15 @@
     <div class="container py-6">
       <div class="row g-5 align-items-center justify-content-center justify-content-lg-between">
         <div class="col-8 col-md-6 col-lg-4" data-aos="fade-up">
-          <img alt="Contrast checker screen" src="./resources/images/features/contrast.jpg" class="img-fluid border rounded shadow">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./resources/images/features/contrast-md.jpg">
+            <img alt="Contrast checker screen" src="./resources/images/features/contrast-sm.jpg" class="img-fluid border rounded shadow">
+          </picture>
         </div>
 
         <div class="col-12 col-lg-6 order-lg-first">
           <h2>
-            <span class="h4 text-accent d-block mb-3">Contrast checker</span>
+            <span class="h4 text-secondary d-block mb-2">Contrast checker</span>
             Avoid low-contrast
           </h2>
 
@@ -202,11 +214,11 @@
     </div>
   </section>
 
-  <section class="container-fluid bg-secondary text-white skew-top skew-bottom py-7">
+  <section class="bg-dark text-white skew-top skew-bottom py-7">
     <div class="container">
       <div class="row g-5 align-items-center" data-aos="zoom-out">
         <div class="col-12 col-lg-3">
-          <img alt="Luis Cancel" src="./resources/images/testimony/avatar.jpg" class="me-3 rounded-circle" width="160px">
+          <img alt="Luis Cancel" src="./resources/images/testimony/avatar.jpg" class="rounded-circle" width="160" height="160">
         </div>
 
         <div class="col-12 col-lg-9">
@@ -225,10 +237,10 @@
     </div>
   </section>
 
-  <section class="container-fluid py-8" id="download">
+  <section class="py-8" id="download">
     <div class="container">
       <div class="row g-5 justify-content-center align-items-center">
-        <div class="col-12 col-md-10 col-lg-7 text-center" data-aos="zoom-out">
+        <div class="col-12 col-md-10 col-lg-7 text-center">
           <h2 class="mb-2">Try Swach today</h2>
 
           <span class="d-block lead">Available for macOS, Windows, and Linux</span>
@@ -238,9 +250,17 @@
 
         <div class="col-12 col-md-10 col-lg-5 order-lg-first" data-aos="zoom-in">
           <div class="position-relative">
-            <img alt="Bose Soundlink Revolve+ by Peter Tarka" src="./resources/images/download/download.png" class="w-95 rounded shadow-sm">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./resources/images/download/illustration-lg.jpg">
+              <source media="(min-width: 768px)" srcset="./resources/images/download/illustration-md.jpg">
+              <img alt="Bose Soundlink Revolve+ by Peter Tarka" src="./resources/images/download/illustration-sm.jpg" class="w-95 rounded shadow-sm">
+            </picture>
 
-            <img alt="Swach screen" src="./resources/images/download/screen.jpg" class="position-absolute bottom-0 end-0 w-35 rounded border shadow-sm">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="./resources/images/download/screen-lg.jpg">
+              <source media="(min-width: 768px)" srcset="./resources/images/download/screen-md.jpg">
+              <img alt="Swach screen" src="./resources/images/download/screen-sm.jpg" class="position-absolute bottom-0 end-0 w-35 rounded border shadow-sm">
+            </picture>
   
             <div class="mt-2">
               <small class="text-muted">Illustration by <a href="https://dribbble.com/tarka" target="_blank">Peter Tarka</a></small>
@@ -251,7 +271,7 @@
     </div>
   </section>
 
-  <section class="container-fluid bg-light skew-top skew-bottom py-7">
+  <section class="bg-light skew-top skew-bottom py-7" id="compare">
     <div class="container">
       <div class="text-center">
         <h3>Why Swach ?</h3>
@@ -259,76 +279,78 @@
         <span class="d-block lead">We built Swach to be a complete color tool for all designers on all platforms.</span>
       </div>
       <div class="row justify-content-center">
-        <div class="col-12 col-lg-10 bg-white rounded shadow-sm mt-6 p-4" data-aos="fade-up">
-          <div class="table-responsive">
-            <table class="table table-borderless mb-0">
-              <thead>
-                <tr class="d-flex">
-                  <th scope="col" class="col"></th>
-                  <th scope="col" class="col text-center">Swach</th>
-                  <th scope="col" class="col text-center">Sip</th>
-                  <th scope="col" class="col text-center">Contrast</th>
-                </tr>
-              </thead>
-
-              <tbody>
-                <tr class="d-flex">
-                  <th scope="row" class="col">Color palettes</th>
-                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
-                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
-                  <td class="col"></td>
-                </tr>
-
-                <tr class="d-flex">
-                  <th scope="row" class="col">Contrast checker</th>
-                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
-                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
-                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
-                </tr>
-
-                <tr class="d-flex">
-                  <th scope="row" class="col">Color harmonies</th>
-                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
-                  <td class="col"></td>
-                  <td class="col"></td>
-                </tr>
-
-                <tr class="d-flex">
-                  <th scope="row" class="col">macOS support</th>
-                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
-                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
-                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
-                </tr>
-
-                <tr class="d-flex">
-                  <th scope="row" class="col-3">Windows support</th>
-                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
-                  <td class="col"></td>
-                  <td class="col"></td>
-                </tr>
-
-                <tr class="d-flex">
-                  <th scope="row" class="col">Linux support</th>
-                  <td class="col text-center text-accent"><i title="Yes" class="fas fa-check"></i></td>
-                  <td class="col"></td>
-                  <td class="col"></td>
-                </tr>
-
-                <tr class="d-flex">
-                  <th scope="row" class="col">Price</th>
-                  <td class="col text-center">Free</td>
-                  <td class="col text-center">$10</td>
-                  <td class="col text-center">$6.99</td>
-                </tr>
-              </tbody>
-            </table>
+        <div class="col-12 col-lg-10 mt-6">
+          <div class="bg-white rounded shadow-sm overflow-hidden" data-aos="fade-up">
+            <div class="table-responsive">
+              <table class="table mb-0">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col" class="text-center bg-accent">Swach</th>
+                    <th scope="col" class="text-center">Sip</th>
+                    <th scope="col" class="text-center">Contrast</th>
+                  </tr>
+                </thead>
+  
+                <tbody>
+                  <tr>
+                    <th scope="row">Color palettes</th>
+                    <td class="text-center text-primary bg-accent"><i title="Yes" class="fas fa-check"></i></td>
+                    <td class="text-center text-primary"><i title="Yes" class="fas fa-check"></i></td>
+                    <td></td>
+                  </tr>
+  
+                  <tr>
+                    <th scope="row">Contrast checker</th>
+                    <td class="text-center text-primary bg-accent"><i title="Yes" class="fas fa-check"></i></td>
+                    <td class="text-center text-primary"><i title="Yes" class="fas fa-check"></i></td>
+                    <td class="text-center text-primary"><i title="Yes" class="fas fa-check"></i></td>
+                  </tr>
+  
+                  <tr>
+                    <th scope="row">Color harmonies</th>
+                    <td class="text-center text-primary bg-accent"><i title="Yes" class="fas fa-check"></i></td>
+                    <td class=""></td>
+                    <td class=""></td>
+                  </tr>
+  
+                  <tr>
+                    <th scope="row">macOS support</th>
+                    <td class="text-center text-primary bg-accent"><i title="Yes" class="fas fa-check"></i></td>
+                    <td class="text-center text-primary"><i title="Yes" class="fas fa-check"></i></td>
+                    <td class="text-center text-primary"><i title="Yes" class="fas fa-check"></i></td>
+                  </tr>
+  
+                  <tr>
+                    <th scope="row">Windows support</th>
+                    <td class="text-center text-primary bg-accent"><i title="Yes" class="fas fa-check"></i></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+  
+                  <tr>
+                    <th scope="row">Linux support</th>
+                    <td class="text-center text-primary bg-accent"><i title="Yes" class="fas fa-check"></i></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+  
+                  <tr>
+                    <th scope="row">Price</th>
+                    <td class="text-center bg-accent">Free</td>
+                    <td class="text-center">$10</td>
+                    <td class="text-center">$6.99</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="container-fluid py-7" id="docs">
+  <section class="py-7" id="docs">
     <div class="container">
       <div class="row justify-content-between align-items-baseline">
         <div class="col-12 col-lg-2">
@@ -410,7 +432,7 @@
     </div>
   </section>
 
-  <footer class="container-fluid bg-secondary skew-top pt-7" id="contact">
+  <footer class="bg-dark skew-top pt-7" id="contact">
     <div class="container">
       <h3 class="text-white">Get in touch</h3>
 
@@ -460,10 +482,10 @@
 
       <div class="row mt-3">
         <div class="col-6">
-          <a class="btn btn-secondary btn-sm w-100" href="https://www.producthunt.com/posts/swach" target="_blank">Let's go</a>
+          <a class="btn btn-dark btn-sm w-100" href="https://www.producthunt.com/posts/swach" target="_blank">Let's go</a>
         </div>
         <div class="col-6">
-          <button type="button" class="btn btn-link btn-sm w-100" data-bs-dismiss="toast">Dismiss</button>
+          <button type="button" class="btn btn-link link-primary btn-sm w-100" data-bs-dismiss="toast">Dismiss</button>
         </div>
       </div>
     </div>
@@ -496,10 +518,10 @@
 
             <div class="row g-2 mt-4">
               <div class="col-6">
-                <a class="btn btn-secondary btn-sm w-100" id="download-button">Download</a>
+                <a class="btn btn-dark btn-sm w-100" id="download-button">Download</a>
               </div>
               <div class="col-6">
-                <button type="button" class="btn btn-link btn-sm w-100" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-link link-primary btn-sm w-100" data-bs-dismiss="modal">Cancel</button>
               </div>
             </div>
           </form>
